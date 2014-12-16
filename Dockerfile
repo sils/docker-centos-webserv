@@ -8,3 +8,5 @@ RUN yum install httpd httpd-devel \
       -y
 
 RUN pecl install apc
+
+ADD apc.ini /etc/php.d/apc.ini
