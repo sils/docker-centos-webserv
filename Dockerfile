@@ -10,3 +10,5 @@ RUN yum install httpd httpd-devel \
 RUN pecl install apc
 
 ADD apc.ini /etc/php.d/apc.ini
+
+VOLUME /etc/httpd /etc/pki/tls/certs
